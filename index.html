@@ -1,0 +1,68 @@
+<html>
+   <head>
+       <title>Form contato</title>
+   </head>
+
+   <style>
+
+      body{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        background-color: blueviolet;
+      }
+
+    form{
+      background-color: aliceblue;
+      max-width: 500px;
+      width: 70%;
+      padding: 30px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+    }
+    form h3{
+      text-align: center;
+      color: blueviolet;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    form input[type=text],
+    form input[type=password]{
+      width: 100%;
+      height: 45px;
+      border: 1px solid #ccc;
+      padding-left: 10px;
+      margin: 10px 0;
+    }
+     
+    form button{
+      width: 100%;
+      height:40px;
+      cursor: pointer;
+      background-color: rgb(214, 202, 214);
+      color:rgb(143, 12, 12);
+      border:0;
+      border-radius:20px;
+      transition:1s;
+    }
+
+    form input[type=submit]:hover{
+        background-color: rgb(229, 142, 229);
+    }
+   #email:focus{
+      border-color: darkviolet;
+    }
+  </style>
+
+  <body>
+    <form>
+        <h3>Entrar em contato</h3>
+        <input id="email" type="text" name="email" placeholder="Seu e-mail..."/>
+        <input id="senha" type="password" name="senha" placeholder="sua senha..."/>
+        <button>enviar</button>
+    </form>
+  
+   </body>
+ </html>
